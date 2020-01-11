@@ -1,7 +1,7 @@
 import React from 'react'
 import FixedNavBar from '../../src';
 import PageHeader from './components/pageHeader'
-import DemoQuickStart from './components/demoQuickStart'
+import Doc from './components/doc'
 import DemoFeatures from './components/demoFeatures'
 import DemoNav from './components/demoNav'
 
@@ -254,7 +254,7 @@ class Demo extends React.Component {
 
                 </div>             
             
-            <DemoQuickStart />
+            <Doc />
         </div>
     }
 }

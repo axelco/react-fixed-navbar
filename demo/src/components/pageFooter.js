@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faLongArrowAltUp} from '@fortawesome/free-solid-svg-icons'
 
@@ -21,7 +20,7 @@ class PageFooter extends React.Component{
     }
 
     render(){
-        return <footer className="main-footer bg-white border-top position-relative">
+        return <footer className="main-footer bg-dark is-dark position-relative">
                 <button 
                 className="back-to-top"
                 onClick={this.handleToTopClick}

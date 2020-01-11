@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
-    template: path.join(__dirname, "demo/index.html"),
+    template: path.join(__dirname, "demo/src/index.html"),
     filename: "./index.html"
 });
 

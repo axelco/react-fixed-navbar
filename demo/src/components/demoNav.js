@@ -14,8 +14,8 @@ class DemoNav extends React.Component {
                 title : "live set up",
             },            
             {
-                id : "quickStart",
-                title : "Quick start",
+                id : "doc",
+                title : "Documentation",
             },                                                                     
         ]
     }
@@ -50,4 +50,5 @@ class DemoNav extends React.Component {
     }
 
 }
+
 export default DemoNav;

@@ -1,6 +1,6 @@
 {
   "name": "axl-react-fixed-nav",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "a react component to fix your navbar on scroll of the pages",
   "main": "dist/index.js",
   "scripts": {

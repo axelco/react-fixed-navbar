@@ -1,34 +1,21 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import LeftAffix from './leftAffix'
+import DocSectionInstall from './docSectionInstall'
 
-import PageHeader from './components/pageHeader'
-import LeftAffix from './components/leftAffix'
-import DocSectionInstall from './components/docSectionInstall'
-
-import './scss/code-blocs.scss'
-import './scss/doc.scss'
+import './../scss/code-blocs.scss'
+import './../scss/doc.scss'
 
 
 class Doc extends React.Component {
     render(){
-        return <div>
-            <PageHeader 
-                bg="primary"
-                ySize="sm"
-                containerSize="sm"
-                containerAlign="center"
-                 >
-                <h1 className="display-4">React fixed Navbar Doc</h1>
-            </PageHeader>
-            <div className="container py-6">
-
+        return <div id="doc" className="py-6 bg-white">
+            <div className="container">
+                <h2 className="text-center display-4 mb-5">Component <strong className="text-primary">Documentation</strong></h2>
                 <div className="row">
-                    
-
                     <nav className="col-12 col-lg-3 col-xl-2 pr-lg-5">
 
                         <LeftAffix 
-                            topHeight={50}
+                            topHeight={100}
                         >
                             <ul className="doc-left-nav">
                                     <li className="nav-item">
@@ -40,13 +27,11 @@ class Doc extends React.Component {
                         </LeftAffix>
 
                     </nav>
-                    
-
                     <div className="col-12 col-lg-9 col-xl-10 doc-sections">
 
                         <DocSectionInstall />
                         <section id="use">
-                            <h2>Use the component</h2>
+                            <h3>Use the component</h3>
                             <p>import the component wherever you need it :</p>
                             <pre className="code-bloc lang-jsx">
                                 <code >
@@ -84,7 +69,7 @@ class Doc extends React.Component {
                             </pre>                            
                         </section>                           
                         <section id="props">
-                            <h2>Props</h2>
+                            <h3>Props</h3>
                             <div className="table-responsive">
                             <table className="table table-bordered">
                                 <thead className="thead-dark">
@@ -149,16 +134,10 @@ class Doc extends React.Component {
                             </div>
 
                         </section>                       
-                    </div>                    
+                    </div>                                
                 </div>
-                
             </div>
-            {/* <div className="bg-primary is-dark rounded p-5 shadow text-center">
-                <div className="container-sm">
-                    <h3>Want to review the demo</h3>
-                    <Link to="/" className="btn btn-lg btn-light">Go back to demo</Link>
-                </div>
-             </div>         */}
+
         </div>
     }
 }

@@ -120,7 +120,11 @@ a{
     }
 
     p {
-        color: darken($white, 10%);
+        color: darken($white, 15%);
+    }
+
+    a {
+        color: lighten($primary, 15%);
     }
 
 }
@@ -228,6 +232,9 @@ PAGE HEADERS
     width: 100%;
     min-height: $topNav-height;
 
+    &.navbar-dark {
+        color: darken($white, 10%);
+    }
 }    
 
 /*

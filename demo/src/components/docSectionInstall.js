@@ -4,7 +4,7 @@ class DocSectionInstall extends React.Component {
 
     render(){
         return <section id="install">
-        <h2>Install</h2>
+        <h3>Install</h3>
         <p>Run the following command inside your react project</p>
         <pre className="code-bloc lang-cli">
             <code >
