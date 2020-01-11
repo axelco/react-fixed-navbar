@@ -1,0 +1,397 @@
+@import './_bs-vars.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+body {
+    color: lighten($dark,10%);
+    font-family: 'Kulim Park', sans-serif;
+    font-weight: 400;
+    background: darken($white, 10%);
+
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+.text-dark-70 {
+    color: rgba($dark,.7);
+}
+
+.text-dark-50 {
+    color: rgba($dark,.5);
+}
+
+h1,h2,h3{
+    color: lighten($dark,2%);
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    margin-bottom: 2.5rem!important;
+}
+
+h4,h5,h6{
+    color: lighten($dark,5%);
+    font-weight: 700;
+}
+
+.display-1 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.display-2 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+.display-3 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-4 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+.bg-primary-gradient {
+    background: linear-gradient($primary 20%, darken($primary,10%)80%)
+}
+
+
+.bg-primary-darken {
+    background: $primary-darken-10;
+}
+
+
+.nav-link {
+    color: lighten($dark, 15%);
+
+    &:hover{
+        color: $dark;
+    }
+}
+
+a{
+    color: $primary;
+
+    &:hover{
+        color: $primary-darken-20;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-sm{
+        max-width: 760px!important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-sm{
+        max-width: 760px!important;
+    }
+}
+
+.lead-1 {
+    font-size: 1.8rem;  
+}
+
+/*
+ is-dark : handle white color inside this css
+*/
+
+.is-dark {
+    h1,h2,h3 {
+        color: darken($white, 2%);
+    }
+
+    p {
+        color: darken($white, 10%);
+    }
+
+}
+
+/* 
+    CUSTOM PADDINGS AND MARGINS
+
+*/
+
+.py-6, .pt-6 {
+    padding-top: 3rem;
+}
+
+.py-6, .pb-6 {
+    padding-bottom: 3rem;
+}
+
+.py-8, .pt-8 {
+    padding-top: 3.5rem;
+}
+
+.py-8, .pb-8 {
+    padding-bottom: 3.5rem;
+}
+
+.py-10, .pt-10 {
+    padding-top: 4rem;
+}
+
+.py-10, .pb-10 {
+    padding-bottom: 3.5rem;
+}
+
+@media(min-width: 960px){
+    .py-6, .pt-6 {
+        padding-top: 6rem;
+    }
+    
+    .py-6, .pb-6 {
+        padding-bottom: 6rem;
+    }
+    
+    .py-8, .pt-8 {
+        padding-top: 8rem;
+    }
+    
+    .py-8, .pb-8 {
+        padding-bottom: 8rem;
+    }
+
+    .py-10, .pt-10 {
+        padding-top: 10rem;
+    }
+    
+    .py-10, .pb-10 {
+        padding-bottom: 10rem;
+    }    
+}
+
+
+/*
+    BS FORMS OVERRIDES
+*/
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: $primary;
+    background-color: $primary;
+}
+
+/*
+PAGE HEADERS
+*/
+.page-header {
+    padding-top : calc(2rem + #{$topNav-height});
+    padding-bottom: 2rem;
+
+    &.page-header-padding_sm {
+        padding-top : calc(1rem + #{$topNav-height});
+        padding-bottom: 1rem;        
+    }   
+
+    &.page-header-padding_l {
+        padding-top : calc(4rem + #{$topNav-height});
+        padding-bottom: 4rem;        
+    }
+
+
+    &.page-header-padding_xl {
+        padding-top : calc(6rem + #{$topNav-height});
+        padding-bottom: 6rem;        
+    }
+}
+
+
+
+/*
+    TOP NAVBAR
+*/
+
+.top-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: $topNav-height;
+
+}    
+
+/*
+    MAIN FOOTER
+
+*/
+
+$backToTopHeight: 50px;
+
+.main-footer {
+    padding-top: $backToTopHeight /1.2;
+    padding-bottom: $backToTopHeight /1.2;
+}
+
+.back-to-top {
+    position: absolute;
+    border: none;
+    right: $backToTopHeight /2;
+    top: -$backToTopHeight /2;
+    width: $backToTopHeight;
+    height: $backToTopHeight;
+    background: $secondary;
+    color: $white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: $transition-base;
+
+
+    &:hover{
+        color: $white;
+        transform : scale(1.1)    
+    }
+
+}
+
+@media(min-width: 990px){
+    .main-footer {
+        padding-top: $backToTopHeight /2;
+        padding-bottom: $backToTopHeight /2;
+    }    
+}
+
+/*
+    CUSTOM SWITCH CHECKBOXES
+*/
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-bottom: 0;
+  }
+  
+  .switch-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Label part at the right of the switch */
+  .switch-label {
+    padding-left: .8rem;
+    font-size: calc(8px + 1vmin);
+    color: lighten($dark, 30%);
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lighten($dark, 20%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: $primary;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 15px darken($primary, 15%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+/*
+  TABLES
+*/
+
+.table {
+    .thead-primary {
+        th {
+            background-color: $primary;
+            border-color: $primary-darken-10;
+            color: $white;
+        }
+    }
+
+    .thead-dark {
+        th {
+            background-color: $dark;
+            border-color: darken($dark,2%);
+        }
+    }
+
+    td {
+        color: rgba($dark,.65);
+        padding: 1rem;
+    }
+
+    tbody {
+        th {
+            color: $dark;
+            font-weight: 300;
+        }
+    } 
+
+    p {
+        color: rgba($dark,.85);
+    }
+
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid darken($white,15%);
+}

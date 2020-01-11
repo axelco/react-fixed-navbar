@@ -1,0 +1,19 @@
+@import './_bs-vars.scss';
+
+.doc-sections {
+    section {
+        padding-top: 3rem;
+
+        &:first-child{
+            padding-top: 0;
+        }
+    }
+}
+
+.doc-left-nav {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid darken($white, 15%);
+}

@@ -1,0 +1,52 @@
+@import './_bs-vars.scss';
+
+
+/*
+
+DEMO NAVBAR
+
+*/
+
+.demo-navbar {
+    min-height: $topNav-height;
+    background: $white;
+    color: lighten($dark,20%);
+    border-bottom: 1px solid darken($white, 2%);
+}
+
+.demo-navbar-right {
+   .navbar-nav {
+       display:none;
+   } 
+}
+
+.demo-navbar-btn {
+    display: none;
+}
+
+.is-fixed {
+
+    .demo-navbar-btn {
+        display : inline-block;
+    }  
+    .demo-navbar {
+        background: rgba($white,.95);
+        box-shadow: 0 5px 35px -15px rgba(0,0,0,.10);
+        // color: darken($white,10%);
+        border-bottom: none;
+    }
+
+    // .nav-link {
+    //     color: darken($white,10%);
+    // }
+}
+
+
+@media(min-width: 990px){
+
+    .demo-navbar-right {
+        .navbar-nav {
+            display:flex;
+        } 
+     }    
+}

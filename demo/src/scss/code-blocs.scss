@@ -1,0 +1,35 @@
+@import './_bs-vars.scss';
+
+.code-bloc {
+
+    background: lighten($dark,5%);
+    border-radius: .25rem;
+    padding: 1.5rem 2rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: darken($white,10%);
+
+
+    .l-05 {margin-left: .5rem;} 
+    .l-1 {margin-left: 1.5rem;}    
+    .l-2 {margin-left: 3rem;}   
+    .l-3 {margin-left: 4.5rem;}  
+    .l-4 {margin-left: 6rem;}   
+    .l-5 {margin-left: 7.5rem;}    
+
+    &.lang-jsx {
+        .comp {color: #7cd4b7;}
+        .node {color: #8ec4ff;}
+        .comm {color: lighten($dark, 25%);}
+        .statement{color: #de87e8}
+        .method{color: #ffffc0; }
+        .string {color: #ffcd72}
+        .func {color: #8ec4ff;}
+    }
+
+    &.lang-cli {
+        .cli-name {
+            color: #ffffc0;
+        }
+    }
+}

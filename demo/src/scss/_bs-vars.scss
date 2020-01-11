@@ -1,0 +1,30 @@
+@import "~bootstrap/scss/functions.scss";
+@import "~bootstrap/scss/variables.scss";
+
+$dark: #2D2D2D;
+$gray: #adb5bd;
+$purple-light: #6100ff ;
+
+
+
+
+$primary: $purple-light;
+$primary-darken-10 : darken($primary, 10%);
+$primary-darken-20 : darken($primary, 20%);
+
+
+$dark-lighten-20 : lighten($dark,20%);
+$secondary : $teal;
+
+$topNav-height : 80px;
+
+/* or, use an existing variable */
+$theme-colors: (
+    primary: $purple-light,
+    secondary: $teal,
+    light: darken($white, 8%)
+);
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+

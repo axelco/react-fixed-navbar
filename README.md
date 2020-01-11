@@ -1,2 +1,2 @@
-# react-fixed-navbar
-A component fixing your navbar whatever you need on user's scroll
+## axl-react-fixed-nav
+A react component that fix a nav when users scrolls your app pages.
